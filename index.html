@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neonlány, porember</title>
     <style>
-        /* ALAPSTÍLUSOK (ugyanaz, mint az előbb) */
-        body {
-    /* Alapértelmezett háttér (Elias színe) */
+    body {
     background-color: #f4f1ea; 
     background: linear-gradient(90deg, #e0eafc 0%, #f4f1ea 50%, #e5d3c5 100%);
     background-attachment: fixed;
@@ -16,11 +14,9 @@
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    /* Ez teszi simává a váltást */
     transition: background 1.5s ease; 
 }
 
-/* Két külön stílus a háttérnek */
 body.maya-theme {
     background: linear-gradient(90deg, #3498db66 0%, #f4f1ea 50%, #3498db22 100%);
 }
@@ -47,7 +43,6 @@ body.elias-theme {
         h1 { font-size: 2.8rem; letter-spacing: 4px; text-transform: uppercase; margin: 0; }
         .author { font-style: italic; color: #7f8c8d; margin-top: 10px; }
 
-        /* FEJEZETEK REJTÉSE */
         .chapter { display: none; }
         .chapter.active { display: block; animation: fadeIn 0.8s ease; }
 
@@ -56,9 +51,7 @@ body.elias-theme {
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* FEJEZETCÍMEK */
-       /* Vers alapstílusa */
-.poem {
+ .poem {
     display: block;
     margin: 40px auto;
     text-align: center;
@@ -69,7 +62,6 @@ body.elias-theme {
     max-width: 80%;
 }
 
-/* Opcionális: Színes díszítő vonalak a vers köré */
 .poem::before, .poem::after {
     content: "✦";
     display: block;
@@ -78,9 +70,8 @@ body.elias-theme {
     font-style: normal;
 }
 
-/* Ha a 2. verziót választod (dobozosabb) */
 .poem-boxed {
-    border-left: 2px solid #3498db; /* Neonkék vonal */
+    border-left: 2px solid #3498db;
     margin: 30px 40px;
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.5);
@@ -92,10 +83,10 @@ body.elias-theme {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1000; /* Hogy mindig a szöveg felett legyen */
-    background: rgba(255, 255, 255, 0.7); /* Félig átlátszó fehér */
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
     border: 1px solid #ccc;
-    border-radius: 50%; /* Kerek gomb */
+    border-radius: 50%;
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -112,7 +103,6 @@ body.elias-theme {
     transform: scale(1.1);
 }
 
-/* Mobilon kicsit kisebb lehet, hogy ne lógjon bele a szövegbe */
 @media (max-width: 600px) {
     .home-button {
         top: 10px;
@@ -137,7 +127,6 @@ body.elias-theme {
 
         article p { text-align: justify; font-size: 1.15rem; margin-bottom: 1.6rem; }
 
-        /* INICIÁLÉK */
         .elias-section p:first-of-type::first-letter {
             float: left; font-size: 4.5rem; line-height: 0.8; padding-right: 12px; font-weight: bold; color: #8b5e3c;
         }
@@ -145,7 +134,6 @@ body.elias-theme {
             float: left; font-size: 4.5rem; line-height: 0.8; padding-right: 12px; font-weight: bold; color: #3498db;
         }
 
-        /* GOMB STÍLUSA */
         .nav-container {
             text-align: center;
             padding: 40px 0;
@@ -168,7 +156,7 @@ body.elias-theme {
             text-align: center;
             margin: 50px 0;
             font-size: 2rem;
-            color: #3498db; /* Neonlány kék színe */
+            color: #3498db;
             letter-spacing: 10px;
         }
         .btn-next:hover { background-color: #34495e; }
@@ -214,13 +202,8 @@ body.elias-theme {
                 <p>A szomszéd házak üresek voltak, mint mindig, árnyékuk megnyúlt a délutáni fényben, torzítva, mintha a falak maguk is meghajoltak volna a magány alatt. Az ablakok úgy bámultak rám, mint a halott szemek – üresen, porral befuttatva, ahol néha még ott ragadt egy függönyfoszlány, sárgásan lobogva, mint egy elfelejtett zászló. Egyikben megláttam a saját tükörképemet: magas, szikár alak, a hátizsák súlyától kissé görnyedve, a bakancs porosan, a rövid hajam összekuszálódva a szélben. Nem mosolyogtam vissza; ők sem tettek ilyet, amikor még lakták ezeket a szobákat, mielőtt a tartozás elvitte őket, vagy a betegség, vagy csak a fáradtság, ami lassan rágta szét a falakat belülről. Elindultam a délre vezető úton, ahol az aszfaltot már benőtte a szúrós lepényfa, tüskés ágai feltörve a repedéseket, mint vénák, amik vérzést indítanak a fekete felületen. A lépteim tompán koppantak, a jobb bakancs sarka néha megbotlott egy gyökérben, de nem estem el; a testem ismerte ezt az utat, mint egy régi sebhelyet, amit nem kell nézni, csak érezni.</p>
                 <p>Nem éreztem szomorúságot. Nem éreztem semmit. Csak a bal lábam után a jobbat. Aztán megint a balt. A ritmus egyszerű volt, gépies, mint a légzés, ami reggel megállt – nem gondolkodás, csak mozgás, a porfelhő mögöttem lassan ülepedve, mint egy nyom, amit a szél majd elsimít. Az út mentén rozsdás roncsok hevertek: egy autóváz, aminek a kerekei rég leszakadtak, tele esővízzel, ahol a bogarak úsztak; egy tábla, félredőlve, "Dél – 5 km" felirattal, de a számok lekoptak, mint a remények. A nap lejjebb ereszkedett, aranyló fénye szűrődött át a lepényfa levelein, foltos árnyékot vetve a talajra, de a meleg nem ért el hozzám; csak a por ragadt a bőrömre, finom rétegként, amit később majd lemos a verítékem.</p>
                 <p>A fülhallgatót a fejemre illesztettem, a vékony párnák hidegen simultak a fülemre, ahol a hajam nedvesen tapadt a tarkómhoz. A drótok a nyakam körül tekeredtek, mint vénák, amik a lejátszóhoz vezettek a zsebben. Megnyomtam a gombot – halk kattintás, aztán a kurblis fogantyú sima ellenállása, amikor előhúztam, és gyorsan megtekerem párszor, érezve a dinamó duruzsolását, mint egy távoli motor indítását. A szalag nyikorogva elindult, recsegve, mintha a por beszivárgott volna a mechanikába, de aztán kijött a torz, mély gitárszólam, lassú, reszkető akkordok, amik a deltáról szóltak, folyókról, amik elapadtak, de még mindig énekeltek a veszteségről. Betöltötte a fejemet, tompítva a szél suttogását, a távoli város zúgását, ami itt már csak halk moraj volt, mint egy álom szélén. Ez volt az én világom: a ritmus és a por. A gitár húrjai vibráltak a csontjaimban, a dobszólam tompán döngette a mellkasomat, szinkronban a lépteimmel – bal, jobb, bal –, mintha a zene nem játszana nekem, hanem én lépnék vele, egy régi táncban, ahol nincs közönség.</p>
-
             </article>
         </section>
-
-        
-
-
 <section id="ch2" class="chapter maya-section">
             <h2 class="speaker maya-title">Maya</h2>
             <article>
@@ -240,7 +223,6 @@ body.elias-theme {
                 <p>Kikértem a kabátomat a digitális ruhatárból – a hangom parancsot adott, "sötétkék gyapjú, professzionális", mert a rendszer még mindig reagált rám, a falba épített szekrény halkan zúgott, és kidobta a darabot, hajtogatva, illatozva a szintetikus tisztaságtól. Felvettem a legdrágább fehér ingemet – selyemkeverék, "anti-ránc technológiával", amit a meetingekhez tartogattam –, de most már nem gondoltam a gyűrődésre, amikor a karjaimat belebújtattam, a mandzsettát begomboltam, ujjai remegve, de nem a hidegtől. A cipőimet – azokat a párba rendezett, bőr darabot, "kényelmes, de professzionális" – vágtam bele a lábam anélkül, hogy lehajoltam volna, mert a térdeim most már nem engedelmeskedtek a kecsességnek. Kiléptem az ajtón, a retesz halkan kattant mögöttem – biometrikus, ujjlenyomatommal nyílt, de most már úgy éreztem, örökre záródik. Marc még utánam szólt – "Kilencre meeting, ne felejtsd a prezentációt!" –, de a hangja elhalt a lift zümmögésében, ami puha volt, légpárnás, lefelé siklott velem a torony alsóbb szintjeire, ahol a falak még mindig simák voltak, de már éreztem a vibrációt, a város igazi pulzusát, ami nem algoritmus, hanem káosz.</p>
                 <p>Az utcán a valóság arcul csapott, keményen, mint egy ököl, amit nem látsz megközelíteni. A központ még tiszta volt – a tornyok lábánál a drónok zúgtak, szállítva a reggeli csomagokat, a járdák önmagukat tisztító felületűek voltak, ahol a por még nem telepedett le, mert a nano-szűrők elszívták, mielőtt észrevehető lenne, de ahogy haladtam kifelé, a 21. század igazi arca kezdett megmutatkozni, rétegenként, mint egy régi seb, amit valaki feltép. A neoncsíkok elhalványultak, a holografikus hirdetések – "Optimalizáld az életed! 20% kedvezmény a stressz-appra!" – recsegve szakadoztak, ahogy a jel gyengült, és helyükbe léptek a koszfoltok a falakon, graffiti maradványai, amiket kézzel festettek, véres ujjakkal, üzenetekkel, melyek nem adatot sugároztak, hanem dühöt: "A hálózat hazudik". Elhagyatott terminálok tornyosultak a sarkokon – régi metróbejáratok, amiket a maglev vonal helyettesített, de most már csak üres lyukak a földben, ahol a víz gyűlt, szürkésen, és a patkányok surrogása hallatszott fel, nyersen, éhesen. És az a mindent elborító, finom szürke por – nem is por, inkább hamu, a gyárakból, a szétesett álmokból, a város pereméről, ahova a szűrők már nem értek el –, ami most már mindenhol volt, a levegőben kavargott, mint egy köd, ami beszivárgott az orromba, a tüdőmbe, keserű ízzel, fémesen, de most még nem tudtam a nevét, csak éreztem, ahogy marja a torkomat, amit a reggeli turmix soha nem mosott tisztára.</p>
                 <p>Minden lépésnél éreztem, ahogy a méregdrága bőrcipőm talpa alá szorul a kavics – éles, durva szemcsék, amik nem simulnak a talpbetétbe, hanem nyomnak, szúrnak, mintha a föld maga akarna visszaszerezni engem, ami eddig a felhőkben járt. A cipőm – az a finom, olasz bőr, amit a vásárló-app javasolt "státusz-szimbólumként" – most már recsegett, a varrások feszültek, és láttam, ahogy a por beszivárog a résekbe, szürkés csíkot hagyva a peremen, ahol a fény megcsillan. Őrjítő volt. Nem a fájdalom, hanem az érzés: hogy ez valóságos, hogy ez nem szűrhető ki egy gombnyomással, nem optimalizálható egy frissítéssel. Megálltam egy elhagyatott kereszteződésben, ahol a lámpák már rég kialudtak, csak a drótjaik lógnak le, mint elhalt idegek, és próbáltam letörölni a nadrágomról egy foltot – egy szürke pacát, ami a térdemnél telepedett le, a gyapjú szövete most már nem taszította, hanem magába szívta, mint egy szivacs. De amikor a kezemmel dörzsöltem, csak szétkentem: a por ragacsossá vált a verítéktől, amit a pánik hozott elő és most már folt lett belőle, nagy, szabálytalan, ami nem tűnik el egy mosással, mert ez nem a lakás ruhatisztítója, ez a világé. A kezem remegve állt meg, ujjaim porosak, és nevettem újra – halkan, de felszabadultan –, mert ez a folt volt az első igazi dolog rajtam: nem tökéletes, nem optimalizált, hanem az enyém. A város zúgott körülöttem, távoli szirénák, drónok moraja, de én itt álltam, a porban, a kavicsban, a repedéssel az agyamban, ami most már nem mászott, hanem húzott előre, kifelé, a lepényfa felé. De most még csak léptem, bal után jobb, érezve, ahogy a föld ellenáll, de enged, mert végre nem simulok hozzá – én vagyok a kavics, ami a talp alá szorul.</p>
-
             </article>
         </section>
 
@@ -255,10 +237,8 @@ body.elias-theme {
                 <p>Nem szóltam. Nem mozdultam közelebb. Csak álltam, a hátizsák súlyát érezve a vállamon, a bőr pántjai beleharapva a pólóba, ahol a veríték nedves foltot hagyott. A lepényfa gyökerei a padka mellett tekeregtek, tüskésen a porban, és a nő keze most megállt félúton, az ujjai kinyújtva a levegőben, ahol a porrészecskék táncoltak a fényben, de nem ért hozzá, csak lógott ott, mozdulatlanul, mielőtt visszahúzta, és újra nekifutott a foltnak, most már a körmével kaparva, finoman, de kitartóan, mintha a szövet alatti szennyet akarná kiszedni, de csak újabb szálakat húzott ki, vékonyakat, szürkét, amik a tenyerébe ragadtak.</p>
                 <p>A híd fölött a szél suhogott, a vasalásai halkan nyikorogtak, mint egy régi ajtó, de lent, a porban, csak ez a dörzsölés volt, ismétlődő, közönyösen, mintha a nő nem is ő maga lenne, aki csinálja, hanem a por része, ami magát próbálja letisztítani a nadrágról. A tekintete a kezére szegeződött, a szemhéja félig lehúzva, nem látva semmit körülötte – sem a vörös agyagot, sem a bakancsaimat, amik már csak két lépésre voltak tőle. Nem nézett fel; csak dörzsölt, a mozdulat lassan lassult, a por most már a kezén is volt, szürkés rétegként, de nem törölte le, hagyta, hogy ott maradjon, miközben a nadrágszár ugyanolyan koszos maradt, mint előtte.</p>
                 <p>A nap már alacsonyan járt, a fénye sárgásan szűrődött át a lepényfa levelein, foltos árnyékot vetve a nő lábára, ahol a por most már nem csak folt volt, hanem réteg, ami a bőréhez tapadt, ha megérintené. Én meg csak álltam, a levegő fémes ízét szívva be, a földet a bakancs alatt érezve. A dörzsölés folytatódott, halkan, közönyösen, mint a szél a vasbordákon, és én tudtam: ez a por nem tűnik el, soha, mert része a talajnak, ahonnan jöttünk, ahová tartunk.</p>
-
             </article>
         </section>
-
 <section id="ch4" class="chapter maya-section">
             <h2 class="speaker maya-title">Maya</h2>
             <article>
@@ -267,7 +247,6 @@ body.elias-theme {
                <p>A nadrágszáram – ez a sötétkék gyapjú, amit a ruhatárból hívtam elő, professzionális és makulátlan – most már tele volt foltokkal, szürke pacákkal, amik nem csak a térdemnél voltak, hanem végigfutottak a szárán, ahol a por beszivárgott a szálak közé, összekeveredve a verítékkel, ragacsossá téve a szövetet, ami eddig szárazon simult a lábamra, légáteresztőn, anti-ráncosan. A kezemet előrenyújtottam, a tenyerem laposra feszítve, ujjaim kinyújtva, fáradtan, és dörzsölni kezdtem – lassan, körkörösen, a hüvelyujjam a térd fölötti foltra nyomva, ahol a por vastagabb volt, beivódva a gyapjúba, mint egy tinta, amit nem lehet kimosni. A szövet susogott a tenyerem alatt, finoman, de ellenállva, a szálak nem adták ki a szennyet, csak szétkenték, nagyobb pacává növelve a foltot, ahol most már a gyapjú sötétebb lett, szinte fekete csíkokban, és éreztem, ahogy a porrészecskék a körmöm alá kerülnek, apró szemcsék, amik karcolnak, csak emlékeztetve: ez nem tűnik el, ez marad, rétegenként épül rád, mint a repedés a szélvédőn. Próbáltam erősebben, a körmeimet most már a szövethez kaparva, finoman húzva, de csak egy vékony szálat szakítottam ki, szürkét, ami a tenyerembe ragadt, nedvesen a verejtéktől, és most már a kezem is koszos volt, a ujjízületek között szürke csíkokkal, de nem álltam le, mert ez a mozdulat volt az egyetlen, ami értelmesnek tűnt itt, ebben a porfelhőben, ahol a szél kavarta a lepényfa leveleit, halk surrogással, mint egy távoli zúgás, amit a kávéfőző hagyott hátra, de torzítva, nyersen.</p>
                <p>És akkor felpillantottam – csak úgy, ahogy a dörzsölés közben a tekintetem felkúszott a horizonton, a híd ívén át, de megakadt valamin, ami nem a beton volt, nem a vasalás rozsdája, hanem egy alak, aki szinte fölöttem állt, a lábai két lépésre a padkától, a bakancsa – nehéz, bőr, porosan, kérgesen – beleásva az agyagba, ahol a nyomai mélyebbek voltak, mint a lépéseimé, mintha a föld ismerné őt, befogadná, nehezedne rá. Az árnyéka rám vetült, hosszúkás, a napfény szűrődött át a válla fölött, foltosan, de sötétítette a porfelhőt körülöttem, a kőpadkát, ahol ültem, mintha egy felhő takarná el a fényt, csak sötétséget, nyerset, ami földbarna a vörös agyagtól. Magas volt, szikár, a pólója koszos, fakó pamut, ami a mellkasához tapadt, izzadtságtól, a vállán hátizsákkal, ami lehúzta őt, stabilizálta, mint egy gyökeret a szélben. A haja rövid, sötét, porosan csillogva, az arca csiszolt, vonásai megmerevedettek, a bőr sápadt, de kérges a kézen, amit most lazán lógatott a teste mellett, ujjai összefonva csak úgy – rám nézett, de nem igazán, a tekintete egyenes volt, de üresen, mint egy tükör, ami visszaver, de nem ítél, csak mutatja a valóságot, a poromat, a foltomat, a fáradtságomat. Nem szólt, nem mozdult; csak állt, a bakancsa tompán állva a földben, az árnyéka most már teljesen rám borult, hűvösen, a vállaimra nehezedve, ahol a kabátom gyűrött redői most még sötétebbek lettek.</p>
                <p>És ekkor jött az utálat, enyhe, finom émelygés a gyomromban, ami felfelé szivárgott, a torokba, ahol a por már eleve marta a nyálkahártyát, de ez más volt, hidegebb, mint a fémes íz, amit a levegőből szippantottam be. Undor mindentől, ettől a nyersességtől, amit képviselt: a koszos póló, ami nem anti-ráncos, hanem egyszerűen csak használt, a bőrén a sápadtság, ami nem volt krémezett, inkább napfény nélküli, a keze kérges, munkától keményedett, mintha a földet kaparta volna vele, nem pedig a holografikus asztalt. Nem őt utáltam, nem az alakját, a magasságát, ami fölém tornyosult, árnyékot vetve rám, mint egy fal, ami nem véd, hanem eltakar; hanem azt, amit jelképezett, ezt a porral bevont létezést, ami nem optimalizált, nem szűrt, hanem nyers, mint a vörös agyag a híd alatt, ami tátong, mint egy seb, és most rám nézett, várva, hogy én is részesüljek benne, hogy a folt a nadrágomon ne csak folt maradjon, hanem része legyen ennek a sárnak, ennek a közönynek. Az undor enyhe volt, mint egy keserű utóíz a nyelvemen, amitől összeszorult a gyomrom, szerencsére nem hánytam, csak nyeltem, mert tudtam, hogy ez is része a repedésnek, a mászásnak, ami most már nem csak bennem van, hanem kiterjed rá is, erre az árnyékra, ami fölöttem áll, mozdulatlanul, a bakancsával a földben gyökerezve. Abbahagytam a dörzsölést, a tenyerem most már a kövön pihent, hidegen, porosan, és néztem fel rá, a tekintetemmel érintve az arcát, de nem közelítve, mert ez az undor volt a távolság, a finom fal, amit a saját tisztaságom emelt, hiába porosodtam már én is, hiába ültem itt, a lábaim kinyújtva előtte. Ő csak állt, a porban, és én éreztem, ahogy a repedés most már nem csak húz előre, hanem oldalra is, ebbe az árnyékba, amitől enyhén émelyegtem, de nem álltam fel, mert a fáradtság nehezebb volt, mint az undor, és a híd alatt, a lepényfa gyökerei között, ez a pillanat volt a következő lépés: nézni, érezni, elviselni a durva, nyers erőt, ami fölém tornyosult, árnyékot vetve a foltomra, ami most már nem tűnt olyan fontosnak, mert mellette minden egyes folt csak kezdet volt.</p>
-
             </article>
         </section>
 
@@ -284,10 +263,8 @@ body.elias-theme {
                 <p>- Semmit – mondtam végül, a hangom alacsony, gazdaságos, anélkül, hogy elengedtem volna a vállát, de a ujjaim lazultak kissé, elég ahhoz, hogy érezze, nem tartom fogva, csak megakadályozom a zuhanást. - Nem takarok én el semmit. Csak állok.</p>
                 <p>A szavak csak úgy lógtak, mert nincs értelme magyarázni; a nap még mindig sütött, a fénye most már átszűrődött a vállam fölött, foltosan rávetülve, ahol a por csillogott a bőrén, de ő még mindig feszesen állt, a keze most már a saját vállára simult, ahol én érintettem, mintha letörölné a nyomot, de nem tette; csak nézett rám, az undorral a szemében, én meg csak sajnáltam, közönyösen, mint egy lepényfa ágát, ami még nem tudja, hogy eltörhet, de én igen.</p>
                 <p>- Engedj el – mondta halkan, de nem húzódott el azonnal, a hangja most már nem éles, hanem rekedt, a fáradtságtól, a porral kevert levegőtől, amit lenyelt. Elengedtem, a kezem lassan lecsúszott a könyökéről, a ujjaim a gyapjút végigsimították, de a kezei továbbra is a levegőben lógtak, mozdulatlanul. Állt, egyensúlyozva, a cipője most már stabilan a kövön, de a térde még mindig remegve tartotta a súlyát. Nem szólt többet; én sem. Csak álltunk ott, a híd alatt, a porban, az árnyékom most már rövidebb lett, ahogy a nap lejjebb járt, de a távolság megmaradt, a lesajnálatommal, az undorával, mint két gyökér, ami még nem ér össze, de a föld már húzza őket egymás felé.</p>
-
             </article>
         </section>
-
 
 <section id="ch6" class="chapter maya-section">
             <h2 class="speaker maya-title">Maya</h2>
@@ -299,10 +276,8 @@ body.elias-theme {
                 <p>A fénye most már nem csak pulzált, hanem hívott, finoman, mint egy vénás pont a csuklón, amit megérintesz, és hirtelen érezni kezded a szívdobbanást – nem a sajátodat, hanem valami régebbit, mélyebbet, ami a bőr alatt rejtőzik, várva, hogy valaki észrevegye. Én észrevettem, ő is, egyszerre, mintha a patkány futása után maradt csendben a világ megállt volna egy pillanatra, és csak ez a doboz létezne, matt fekete felülete pormentesen csillogva a vörös agyag közepén, ahol a lepényfa gyökerei karcolták a földet, de nem érték el, mintha egy láthatatlan pajzs tartaná távol a szennytől. A kíváncsiság most már teljesen elnyomta az undort – vagy talán csak átalakította, keserű izgalommá, ami a gyomromban kavargott, mint a reggeli kávé, de most már nem duruzsoló gépről jött, hanem ebből a pulzálásból, ami a kijelzőn kígyózott, vonalakban, spirálokban, amik nem számokat mutattak, hanem görbéket, mintha az idő maga lenne, nem egyenes vonal, hanem csavarodó ösvény, amit a rendszer soha nem simított ki.</p>
                 <p>- Mi történik? – suttogtam, a hangom torzult, visszhangos, mintha egy üres folyosón szólna, de nem a toronyból, hanem innen, a porból, a kezem még mindig az övén, a doboz melegedett, forróvá vált, de nem égette, csak tartotta a kapcsolatot, az áramkört, amit ketten zártunk. </p>
                 <p>- Nem tudom – felelte, a hangja közel, de távol, a szemei most már nem tükörként néztek rám, hanem velem együtt a fénybe, ahol a spirálok összefonódtak, időt görbítve, de mi még nem tudtuk, hogy ez utazás, csak éreztük, ahogy a pillanat megnyúlik, a múlt szagával, a jövő porával keveredve, a patkány suhanása elhalkul, a város zúgása távolodik, és mi ketten, egymásba kapaszkodva, a dobozon, a repedésen át, ahol a kristálytiszta őrület most már nem egyedül mászik, hanem visz, együtt, anélkül, hogy kérdeznénk, hova. A fény elnyelt minket, de nem sötéten; kékesen, pulzálva, és a világ – a híd, a lepényfa, a por – csak egy pillanatra állt meg, mielőtt minden újra indult, de máshol, máskor, amit még nem értettünk.</p>
-
             </article>
         </section>
-
 
 <section id="ch7" class="chapter maya-section">
 <h1>Második rész</h1>
@@ -1590,10 +1565,6 @@ body.elias-theme {
                <p>– Tökéletes – suttogta a lány.</p>
                <p>Kart karba öltve indultak el a ködös úton Elias háza felé. Ahogy távolodtak, az alakjuk lassan beleolvadt a szürkületbe. Mögöttük a híd magányosan állt tovább, de a doboz villogása még egyszer, utoljára felerősödött, majd halkan, elégedetten kialudt. Az időhurok bezárult, és két lélek, akik sosem találkozhattak volna, végre elindult hazafelé, egy olyan jövőbe, amit nem mértek gépek, és egy olyan múltba, amit nem takart el többé a por.</p> 
 <h1><center>VÉGE</center></h1>
-
-            
-
-
             </article>
         </section>
 
@@ -1606,7 +1577,7 @@ body.elias-theme {
 <script>
     // Betöltéskor ellenőrizzük, hol tartott az olvasó
     let currentChapter = parseInt(localStorage.getItem('savedChapter')) || 1;
-    const totalChapters = 6; 
+    const totalChapters = 44; 
 
     // Az oldal betöltésekor azonnal a mentett fejezethez ugrunk
     window.onload = function() {
@@ -1684,4 +1655,5 @@ function restartStory() {
 </script>
 
 </body>
+
 </html>
